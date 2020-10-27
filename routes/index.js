@@ -12,6 +12,6 @@ router.get('/booksells2', function(req, res, next) {
 
 const booksellController = require('../controllers/booksellController');
 
-router.get('/test01', booksellController.test01)
+router.get('/test01', booksellController.getAllBooksells)
 
 module.exports = router;
