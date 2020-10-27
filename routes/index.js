@@ -10,4 +10,8 @@ router.get('/booksells2', function(req, res, next) {
   res.render('booksells', { title: 'BK Library 5' });
 });
 
+const booksellController = require('../controllers/booksellController');
+
+router.get('/test01', booksellController.test01)
+
 module.exports = router;
