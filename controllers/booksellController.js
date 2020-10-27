@@ -1,9 +1,8 @@
 const Booksell = require('./../models/bookModel');
 exports.getAllBooksells = async (req, res) => {
     try {
-       // const booksells = await Booksell.find();
-        const booksells = {'test':'asdasdasd'};
-        res.status(200).render("booksells",{
+        const booksells = await Booksell.find();
+        res.status(200).render("main",{
         status:'success',
         results: booksells.length,
         data: {booksells}
@@ -99,5 +98,14 @@ exports.deleteBooksell = async (req, res) => {
             message: err
         });
 
+    }
+};
+
+exports.test01 = async (req, res) => {
+    try {
+        var users = {"test":"123123"}
+        return res.status(200).json({ status: 200, data: users, message: "Succesfully Users Retrieved" });
+    } catch (e) {
+        return res.status(400).json({ status: 400, message: e.message });
     }
 };
