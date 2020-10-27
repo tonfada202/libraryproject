@@ -3,7 +3,7 @@ const router = express.Router();
 const booksellController = require('../controllers/booksellController');
 
 router
-.route('/booksells')
+.route('/')
 .get(booksellController.getAllBooksells)
 .post(booksellController.createBooksell);
 //router.get('/',BooksellController.getAllBooksells);
