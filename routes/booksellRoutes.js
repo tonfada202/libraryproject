@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const booksellController = require('../controllers/booksellController');
 
-router.get('/test01', booksellController.test01)
 
 router
 .route('/')
