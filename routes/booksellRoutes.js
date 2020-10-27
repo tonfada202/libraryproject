@@ -4,7 +4,7 @@ const booksellController = require('../controllers/booksellController');
 
 
 router
-.route('/')
+.route('/testBooksells')
 .get(booksellController.getAllBooksells)
 .post(booksellController.createBooksell);
 
