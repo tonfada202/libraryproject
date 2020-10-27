@@ -3,7 +3,7 @@ exports.getAllBooksells = async (req, res) => {
     try {
        // const booksells = await Booksell.find();
         const booksells = {'test':'asdasdasd'};
-        res.status(200).render("main",{
+        res.status(200).render("booksells",{
         status:'success',
         results: booksells.length,
         data: {booksells}
