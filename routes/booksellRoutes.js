@@ -2,11 +2,12 @@ const express = require('express');
 const router = express.Router();
 const booksellController = require('../controllers/booksellController');
 
+router.get('/booksells',BooksellController.getAllBooksells);
+
 router
 .route('/')
 .get(booksellController.getAllBooksells)
 .post(booksellController.createBooksell);
-//router.get('/',BooksellController.getAllBooksells);
 
 router
 .route('/:id')
