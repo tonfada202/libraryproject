@@ -1,7 +1,8 @@
 const Booksell = require('./../models/bookModel');
 exports.getAllBooksells = async (req, res) => {
     try {
-        const booksells = await Booksell.find();
+       // const booksells = await Booksell.find();
+        const booksells = {'test':'asdasdasd'};
         res.status(200).render("main",{
         status:'success',
         results: booksells.length,
