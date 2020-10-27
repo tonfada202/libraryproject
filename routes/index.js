@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'BK Library 2' });
 });
 
-router.get('/index2', function(req, res, next) {
-  res.render('index', { title: 'BK Library 5' });
+router.get('/booksells', function(req, res, next) {
+  res.render('booksells', { title: 'BK Library 5' });
 });
 
 
